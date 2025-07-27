@@ -42,7 +42,7 @@ SUBSYSTEM_DEF(job)
 
 /datum/controller/subsystem/job/proc/SetupOccupations(faction = "Station")
 	occupations = list()
-	var/list/all_jobs = subtypesof(/datum/job/roguetown)
+	var/list/all_jobs = subtypesof(/datum/job/roguetown/lethaltowne) //LETHALTOWNE EDIT - originally /datum/job/roguetown, allows us to populate only the roles we want
 	if(!all_jobs.len)
 		to_chat(world, span_boldannounce("Error setting up jobs, no job datums found"))
 		return 0
