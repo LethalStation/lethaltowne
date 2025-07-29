@@ -6,9 +6,9 @@
 /datum/advclass/lethal_rogue/thief
 	name = "Thief"
 	tutorial = ""
-	outfit = /datum/outfit/job/roguetown/lethal_rogue/confessor
+	outfit = /datum/outfit/job/roguetown/lethal_rogue/thief
 	category_tags = list(CTAG_LETHALROGUE)
-	cmode_music = 'sound/music/cmode/antag/combat_deadlyshadows.ogg'
+//	cmode_music = ''
 
 /datum/outfit/job/roguetown/lethal_rogue/thief/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -26,18 +26,17 @@
 		/obj/item/rogueweapon/huntingknife/idagger = 1,
 		/obj/item/lockpickring/mundane = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/grapplinghook = 1,
 		)
-	H.cmode_music = 'sound/music/cmode/antag/combat_cutpurse.ogg'
 	H.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, 6, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)

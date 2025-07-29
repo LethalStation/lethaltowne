@@ -1,5 +1,5 @@
 /datum/job/roguetown/lethaltowne/warrior
-	title = "Mage"
+	title = "Warrior"
 	flag = ADVENTURER
 	department_flag = PEASANTS
 	faction = "Station"
