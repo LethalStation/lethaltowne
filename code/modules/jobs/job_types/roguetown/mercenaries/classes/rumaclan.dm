@@ -22,7 +22,7 @@
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are relatively versed in the art of \"swinging a sword until enemy death.\" - You would gladly take up most jobs for money, or a chance to cut loose."))
 			belt = /obj/item/storage/belt/rogue/leather
-			beltr = /obj/item/rogueweapon/scabbard/kazengun/steel
+			beltr = /obj/item/rogueweapon/scabbard/sword/kazengun/steel
 			beltl = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
 			cloak = /obj/item/clothing/cloak/eastcloak1
@@ -69,6 +69,7 @@
 				/obj/item/roguekey/mercenary,
 				/obj/item/storage/belt/rogue/pouch/coins/poor,
 				/obj/item/rogueweapon/huntingknife/idagger,
+				/obj/item/rogueweapon/scabbard/sheath = 1,
 				)
 			H.adjust_skillrank(/datum/skill/combat/bows, 5, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
